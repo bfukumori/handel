@@ -1,0 +1,97 @@
+.perks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.perks li {
+  margin: 0 20px;
+  padding: 5px 0 5px 35px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.perks li:nth-child(1) {
+  background-image: url('../img/icons/frete.svg');
+}
+
+.perks li:nth-child(2) {
+  background-image: url('../img/icons/troca.svg');
+}
+
+.perks li:nth-child(3) {
+  background-image: url('../img/icons/card.svg');
+}
+
+.slide-item {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  background: #000;
+}
+
+.slide-info {
+  padding: 0 20px 40px 20px;
+  color: #fff;
+  align-self: end;
+}
+
+.slide-price {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, .5);
+  font-weight: 300;
+}
+
+.slide-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.categories a {
+  display: grid;
+}
+
+.categories a:nth-child(1) {
+  border-top: 10px solid #000;
+}
+
+.categories a:nth-child(2) {
+  border-bottom: 10px solid #000;
+}
+
+.categories img {
+  grid-area: 1/1;
+}
+
+.categories span {
+  grid-area: 1/1;
+  align-self: end;
+  justify-self: end;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 160px;
+}
+
+.categories a:nth-child(2) span {
+  justify-self: start;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .slide-item {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-info {
+    margin-top: 20px;
+  }
+}
